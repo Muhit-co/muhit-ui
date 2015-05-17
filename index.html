@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+	<head>
+
+		<title>Muhit web</title>
+
+		<meta name="description" content="" />
+		<meta name="keywords" content="" />
+		<meta name="author" content="L Daniel Swakman, www.ldaniel.eu" />
+		<meta charset="utf-8" />
+
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+
+		<!-- CSS dependencies -->
+		<!-- <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css" /> -->
+		<link rel="stylesheet" href="https://code.ionicframework.com/ionicons/2.0.0/css/ionicons.min.css" />
+		<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,600,700,400italic" />
+
+		<!-- CSS files -->
+		<link rel="stylesheet" href="css/style.css" />
+
+		<!-- JS dependencies -->
+		<script src="https://code.jquery.com/jquery-1.11.1.min.js"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-smooth-scroll/1.5.4/jquery.smooth-scroll.min.js"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/fastclick/1.0.2/fastclick.min.js"></script>
+
+		<!-- JS files -->
+		<script src="js/scripts.js"></script>
+
+		<link href="favicon.ico" type="image/x-icon" rel="icon" />
+		<link href="favicon.ico" type="image/x-icon" rel="shortcut icon" />
+
+	</head>
+
+	<body>
+
+		<nav>
+			<div class="row">
+				<div class="col-xs-12 u-aligncenter">
+
+					<div class="userinfo hasDropdown u-floatright">
+						<a href="javascript:void(0)" id="userinfo" class="u-inlineblock">
+							<span class="badge badge-circle badge-user u-floatright u-ml10">
+								<i class="ion ion-person ion-2x"></i>
+							</span>
+							<span class="text">John Doe</span>
+						</a>
+						<div class="dropdown">
+							<ul>
+								<li><a href="#"><i class="ion ion-plus u-mr5"></i> Yarat ekle</a></li>
+								<li><a href="#"><i class="ion ion-person u-mr5"></i> Profilim</a></li>
+								<li><a href="#" id="logout"><i class="ion ion-log-out u-mr5"></i> Çıkış</a></li>
+							</ul>
+						</div>
+					</div>
+
+					<a href="#top" id="nav_logo" class="u-floatleft"><img src="images/logo.png" height="60px" alt="" /></a>
+
+					<a href="#top" id="navbutton"><i class="ion ion-navicon ion-2x"></i></a>
+
+					<ul id="menu">
+						<li class="active"><a href=""><i class="ion ion-android-home ion-15x"></i>TÜMÜ</a></li>
+						<li><a href=""><i class="ion ion-thumbsup ion-15x"></i>DESTEKLEDİKLERİM</a></li>
+						<li><a href=""><i class="ion ion-lightbulb ion-15x"></i>FİKİRLERİM</a></li>
+						<li><a href=""><i class="ion ion-speakerphone ion-15x"></i>DUYURULAR</a></li>
+						<li><a href=""><i class="ion ion-information-circled ion-15x"></i>MUHTARIM</a></li>
+					</ul>
+
+				</div>
+			</div>
+		</nav>
+
+		<a href="javascript:void(0)" id="dialog_mask"></a>
+
+		<dialog>
+		</dialog>
+
+		<main>
+
+			<header id="top">
+				<div class="row">
+					<div class="col-xs-12 u-pv20 u-aligncenter">
+					</div>
+				</div>
+			</header>
+
+			<section>
+				<div class="row u-pv20">
+					<div class="col-md-4">
+						<div class="list list_block">
+							<div class="list-header"></div>
+							<ul>
+								<li><a href="javascript:void(0)">
+									<p class="u-floatright"><small>1 Apr</small></p>
+									Item 1
+									<p>secondary info</p>
+								</a></li>
+								<li><a href="javascript:void(0)">
+									<p class="u-floatright"><small>31 Mar</small></p>
+									Item 2
+									<p>secondary info</p>
+								</a></li>
+								<li><a href="javascript:void(0)">
+									<p class="u-floatright"><small>30 Mar</small></p>
+									Item 3
+									<p>secondary info</p>
+								</a></li>
+								<li><a href="javascript:void(0)">
+									<p class="u-floatright"><small>29 Mar</small></p>
+									Item 4
+									<p>secondary info</p>
+								</a></li>
+								<li><a href="javascript:void(0)">
+									<p class="u-floatright"><small>28 Mar</small></p>
+									Item 5
+									<p>secondary info</p>
+								</a></li>
+							</ul>
+						</div>
+					</div>
+					<div class="col-md-8">
+						<h1>Heading 1</h1>
+						<h2>Heading 2</h2>
+						<h3>Heading 3</h3>
+						<h4>Heading 4</h4>
+						<h5>Heading 5</h5>
+
+						<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec eleifend at tellus eget tristique. Nullam scelerisque euismod mi, vel suscipit risus efficitur id. Aenean sit amet nisi vel ipsum volutpat porttitor sed eget urna. Morbi dictum ac purus nec imperdiet. Etiam ac tempus nisl. Pellentesque arcu justo, <a href="http://www.muhit.co" target="_blank">Inline text link</a> auctor ac odio ornare, dapibus congue ante. Phasellus tristique orci a fermentum ultricies. Maecenas faucibus bibendum magna. Pellentesque quis ornare quam.</p>
+
+						<a href="http://www.muhit.co" target="_blank">Muhit web</a><br /><br />
+
+						<a href="javascript:void(0)" class="btn btn-primary"><i class="ion ion-plus"></i> YARAT EKLE</a>
+						<a href="javascript:void(0)" class="btn btn-secondary"><i class="ion ion-plus"></i> YARAT EKLE</a>
+						<div class="hasDropdown u-inlineblock">
+							<a href="javascript:void(0)" class="btn">HAREKETE GEÇ <i class="ion ion-chevron-down"></i></a>
+							<div class="dropdown">
+								<ul>
+									<li><a href="#">Çayımı iç</a></li>
+									<li><a href="#">Gelişmekte</a></li>
+									<li><a href="#">Çözüldü</a></li>
+									<li><a href="#">Yorum yaz</a></li>
+								</ul>
+							</div>
+						</div>
+
+						<br /><br />
+
+						<div class="form-group">
+							<label>Adınız</label>
+							<input type="text" class="form-input" value="" placeholder="Yazin..." />
+						</div>
+
+						<div class="form-group">
+							<label>Adınız</label>
+							<input type="text" class="form-input" value="" placeholder="Yazin..." />
+						</div>
+
+					</div>
+				</div>
+			</section>
+
+		</main>
+
+		<footer>
+			<div class="row">
+				<div class="col-sm-4">
+				</div>
+				<div class="col-sm-4">
+				</div>
+				<div class="col-sm-4">
+				</div>
+			</div>
+		</footer>
+
+	</body>
+
+</html>
