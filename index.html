@@ -4,7 +4,7 @@
 
 	<head>
 
-		<title>Muhit web</title>
+		<title>Muhit</title>
 
 		<meta name="description" content="" />
 		<meta name="keywords" content="" />
@@ -49,7 +49,7 @@
 						</a>
 						<div class="dropdown">
 							<ul>
-								<li><a href="#"><i class="ion ion-plus u-mr5"></i> Yarat ekle</a></li>
+								<li><a href="#"><i class="ion ion-plus u-mr5"></i> Fikir ekle</a></li>
 								<li><a href="#"><i class="ion ion-person u-mr5"></i> Profilim</a></li>
 								<li><a href="#" id="logout"><i class="ion ion-log-out u-mr5"></i> Çıkış</a></li>
 							</ul>
@@ -74,7 +74,27 @@
 
 		<a href="javascript:void(0)" id="dialog_mask"></a>
 
-		<dialog>
+		<dialog id="dialog_newidea">
+			<a href="javascript:void(0)" id="closeDialog"><i class="ion ion-ios-close-empty ion-3x u-floatright u-pinned-topright u-mr30 u-mt15"></i></a>
+			<div class="dialog-content">
+					<h2>
+						You need to do something before you can continue.
+					</h2>
+					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec eleifend at tellus eget tristique.</p>
+
+					<div class="form-group form-fullwidth">
+						<label>Adınız</label>
+						<input type="text" class="form-input" value="" placeholder="Yazin..." />
+					</div>
+
+					<hr>
+
+					<div class="u-alignright">
+						<a href="javascript:void(0)" id="closeDialog" class="btn btn-tertiary u-mr10">VAZGEÇ</a>
+						<a href="javascript:void(0)" class="btn btn-secondary">KAYDET</a>
+					</div>
+
+			</div>
 		</dialog>
 
 		<main>
@@ -131,10 +151,10 @@
 
 						<a href="http://www.muhit.co" target="_blank">Muhit web</a><br /><br />
 
-						<a href="javascript:void(0)" class="btn btn-primary"><i class="ion ion-plus"></i> YARAT EKLE</a>
-						<a href="javascript:void(0)" class="btn btn-secondary"><i class="ion ion-plus"></i> YARAT EKLE</a>
+						<a href="javascript:void(0)" class="btn btn-primary u-mr10"><i class="ion ion-plus"></i> FİKİR EKLE</a>
+						<a href="javascript:void(0)" class="btn btn-secondary u-mr10" data-dialog="dialog_newidea">FİKİR EKLE <i class="ion ion-android-open"></i></a>
 						<div class="hasDropdown u-inlineblock">
-							<a href="javascript:void(0)" class="btn">HAREKETE GEÇ <i class="ion ion-chevron-down"></i></a>
+							<a href="javascript:void(0)" class="btn u-mr10">HAREKETE GEÇ <i class="ion ion-chevron-down"></i></a>
 							<div class="dropdown">
 								<ul>
 									<li><a href="#">Çayımı iç</a></li>
@@ -144,6 +164,7 @@
 								</ul>
 							</div>
 						</div>
+						<a href="javascript:void(0)" class="btn btn-tertiary u-mr10">VAZGEÇ</a>
 
 						<br /><br />
 
@@ -155,6 +176,11 @@
 						<div class="form-group">
 							<label>Adınız</label>
 							<input type="text" class="form-input" value="" placeholder="Yazin..." />
+						</div>
+
+						<div class="form-group">
+							<input type="checkbox" name="vehicle" value="agree" class="u-floatleft u-mr20">
+							<label for="checkbox">I agree with the <a href="javascript:void(0)">Terms of service</a>.</label>
 						</div>
 
 					</div>
