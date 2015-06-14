@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+	<head>
+
+		<title>Muhit UI kit</title>
+
+		<meta name="description" content="" />
+		<meta name="keywords" content="" />
+		<meta name="author" content="L Daniel Swakman, www.ldaniel.eu" />
+		<meta charset="utf-8" />
+
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+
+		<!-- CSS dependencies -->
+		<!-- <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css" /> -->
+		<link rel="stylesheet" href="https://code.ionicframework.com/ionicons/2.0.0/css/ionicons.min.css" />
+		<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,600,700,400italic" />
+
+		<!-- CSS files -->
+		<link rel="stylesheet" href="css/style.css" />
+
+		<!-- JS dependencies -->
+		<script src="https://code.jquery.com/jquery-1.11.1.min.js"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-smooth-scroll/1.5.4/jquery.smooth-scroll.min.js"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/fastclick/1.0.2/fastclick.min.js"></script>
+
+		<!-- JS files -->
+		<script src="js/scripts.js"></script>
+
+		<link href="favicon.ico" type="image/x-icon" rel="icon" />
+		<link href="favicon.ico" type="image/x-icon" rel="shortcut icon" />
+
+	</head>
+
+	<body>
+
+		<nav>
+			<div class="row">
+				<div class="col-xs-12 u-aligncenter">
+
+					<div class="userinfo hasDropdown u-floatright">
+						<a href="javascript:void(0)" id="userinfo" class="u-inlineblock">
+							<span class="badge badge-circle badge-user u-floatright u-ml10">
+								<i class="ion ion-person ion-2x"></i>
+							</span>
+							<span class="text">John Doe</span>
+						</a>
+						<div class="dropdown">
+							<ul>
+								<li><a href="#"><i class="ion ion-plus u-mr5"></i> Fikir ekle</a></li>
+								<li><a href="#"><i class="ion ion-person u-mr5"></i> Profilim</a></li>
+								<li><a href="#" id="logout"><i class="ion ion-log-out u-mr5"></i> Çıkış</a></li>
+							</ul>
+						</div>
+					</div>
+
+					<a href="#top" id="nav_logo" class="u-floatleft"><img src="images/logo.png" height="60px" alt="" /></a>
+
+					<a href="#top" id="navbutton"><i class="ion ion-navicon ion-2x"></i></a>
+
+					<ul id="menu">
+						<li class="active"><a href=""><i class="ion ion-android-home ion-15x"></i>TÜMÜ</a></li>
+						<li><a href=""><i class="ion ion-thumbsup ion-15x"></i>DESTEKLEDİKLERİM</a></li>
+						<li><a href=""><i class="ion ion-lightbulb ion-15x"></i>FİKİRLERİM</a></li>
+						<li><a href=""><i class="ion ion-speakerphone ion-15x"></i>DUYURULAR</a></li>
+						<li><a href=""><i class="ion ion-information-circled ion-15x"></i>MUHTARIM</a></li>
+					</ul>
+
+				</div>
+			</div>
+		</nav>
+
+		<a href="javascript:void(0)" id="dialog_mask"></a>
+
+		<dialog id="dialog_newidea">
+			<a href="javascript:void(0)" id="closeDialog"><i class="ion ion-ios-close-empty ion-3x u-floatright u-pinned-topright u-mr30 u-mt15"></i></a>
+			<div class="dialog-content">
+					<h2>
+						You need to do something before you can continue.
+					</h2>
+					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec eleifend at tellus eget tristique.</p>
+
+					<div class="form-group form-fullwidth">
+						<label>Adınız</label>
+						<input type="text" class="form-input" value="" placeholder="Yazin..." />
+					</div>
+
+					<hr>
+
+					<div class="u-alignright">
+						<a href="javascript:void(0)" id="closeDialog" class="btn btn-tertiary u-mr10">VAZGEÇ</a>
+						<a href="javascript:void(0)" class="btn btn-secondary">KAYDET</a>
+					</div>
+
+			</div>
+		</dialog>
+
+		<main>
+
+			<header id="top">
+			<div class="row u-pt40 u-pb60">
+			  <div class="col-md-4 col-sm-6">
+
+				<!-- search issues -->
+				<div class="form-group form-fullwidth">
+				  <input type="text" class="form-input" value="" placeholder="Ara..." />
+				  <a class="form-appendRight"><i class="ion ion-search ion-15x u-pa10"></i></a>
+				</div>
+
+				<!-- change mahalle -->
+				<div class="form-group form-autosuggest form-fullwidth hasDropdown">
+				  <input type="text" class="form-input" value="Erenköy, Kadıköy" />
+				  <a class="form-appendRight"><i class="ion ion-chevron-down u-pa15"></i></a>
+				  <div class="dropdown u-fullWidth">
+				  <ul>
+					<li><a href="#"><b>Alt</b>ınşehir, Başakşehir</a></li>
+					<li><a href="#">Kart<b>alt</b>epe, Bakırköy</a></li>
+					<li><a href="#"><b>Alt</b>ıntepsi, Bayrampaşa</a></li>
+					<li><a href="#">Kart<b>alt</b>epe, Küçükçekmece</a></li>
+					<li><a href="#"><b>Alt</b>ayçeşme, M<b>alt</b>epe</a></li>
+					<li><a href="#"><b>Alt</b>ıntepe, M<b>alt</b>epe</a></li>
+					<li><a href="#" class="light">Daha yukle...</a></li>
+				  </ul>
+				  </div>
+				</div>
+
+			  </div>
+			  <div class="col-md-8 col-sm-6">
+
+				<div class="u-alignright">
+				  <a href="javascript:void(0)" class="btn btn-primary" data-dialog="dialog_newidea"><i class="ion ion-plus u-mr5"></i> FİKİR EKLE</a>
+				</div>
+
+				<h1>Muhit</h1>
+
+			  </div>
+			</div>
+			</header>
+
+      <section>
+        <div class="row row-nopadding">
+
+          <div class="list list-expanded list_block u-mt20 u-m40">
+            <div class="list-header"></div>
+            <ul>
+              <li><a href="javascript:void(0)">
+                <div class="badge badge-image u-floatleft u-mr10">
+                  <img src="images/street_thumbnail.jpg" alt="" />
+                </div>
+                <div class="u-floatright u-alignright u-ml10">
+                  <div class="badge badge-status u-mb5">
+                    <i class="ion ion-wrench"></i> <b>56</b>
+                  </div>
+                  <p><small>Bugün</small></p>
+                </div>
+                <p class="title">Sıraselviler’de araç işgali kontrol edilsin.</p>
+                <p><span class="tag tag-collapsed bg-tag-lightgreen"></span> <span class="tag tag-collapsed bg-tag-orange"></span></p>
+              </a></li>
+              <li><a href="javascript:void(0)">
+                <div class="badge badge-image u-floatleft u-mr10">
+                  <i class="ion ion-lightbulb ion-2x"></i>
+                </div>
+                <p class="u-floatright u-ml10"><small>31 Mar</small></p>
+                <p class="title">Item 2</p>
+                <p>secondary info</p>
+              </a></li>
+              <li><a href="javascript:void(0)">
+                <p class="u-floatright u-ml10"><small>30 Mar</small></p>
+                <p class="title">Item 3</p>
+                <p>secondary info</p>
+              </a></li>
+              <li><a href="javascript:void(0)">
+                <p class="u-floatright u-ml10"><small>29 Mar</small></p>
+                <p class="title">Item 4</p>
+                <p>secondary info</p>
+              </a></li>
+              <li><a href="javascript:void(0)">
+                <p class="u-floatright u-ml10"><small>28 Mar</small></p>
+                <p class="title">Item 5</p>
+                <p>secondary info</p>
+              </a></li>
+            </ul>
+          </div>
+
+          <div class="card card-hidden">
+            <div class="card-header clearfix">
+              <div class="u-floatleft">
+                <a href="javascript:void(0)" class="u-ml10 u-mr20 closeCard"><i class="ion ion-ios-close-empty ion-2x"></i></a>
+              </div>
+              <div class="u-floatright">
+                <a href="javascript:void(0)" class="btn btn-sm btn-secondary u-mr5"><i class="ion ion-android-share-alt"></i></a>
+                <a href="javascript:void(0)" class="btn btn-sm btn-secondary"><i class="ion ion-thumbsup"></i> DESTEKLE</a>
+              </div>
+              <span class="title">Cihangir, Beyoğlu</span>
+            </div>
+            <div class="card-content">
+
+              <h3 class="u-mh5 u-mv10">
+                Sıraselviler’de araç işgali kontrol edilsin. Sıraselviler’de araç işgali kontrol edilsin. Sıraselviler’de araç işgali kontrol edilsin.
+              </h3>
+
+              <div class="media row row-nopadding u-mv20">
+                <div class="media-image col-md-8">
+                  <img src="images/street.jpg" alt="" />
+                </div>
+                <div class="media-map col-md-4">
+                  <img src="images/map.jpg" alt="" />
+                </div>
+              </div>
+
+              <div class="row row-nopadding u-mv20">
+                <div class="col-md-10">
+                  <span class="tag bg-tag-lightgreen u-mr10">AĞAÇLANDIRMA</span>
+                  <span class="tag bg-tag-orange">YAYA</span>
+                </div>
+                <div class="col-md-2 u-alignright">
+                  <label class="c-light"><i class="ion ion-android-calendar u-mr5"></i> 24 May</label>
+                </div>
+              </div>
+
+              <div class="description">
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus pharetra magna quis lectus eleifend pulvinar. Vivamus pellentesque elit pellentesque tellus accumsan luctus. Suspendisse interdum nibh non dui viverra, quis sagittis justo hendrerit. Donec ac justo eu lorem lobortis vehicula sit amet et eros. In pulvinar felis massa, ac varius eros tempus eget. Sed diam neque, vestibulum eu leo nec, sodales vestibulum elit. Sed lectus ipsum, commodo eu tellus id, malesuada fringilla ex. Nunc ultricies urna felis, non ultrices diam lobortis ac. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Sed maximus ex lacus. Vivamus nisi elit, facilisis vel erat at, luctus aliquet dolor. Ut eget mattis arcu, sit amet pretium metus. Aliquam id commodo ipsum. Vivamus ultrices quam non magna consectetur iaculis. Aliquam in viverra lacus, non mollis velit.</p>
+              </div>
+
+            </div>
+
+            <div class="card-footer clearfix">
+              <div class="u-floatright">
+                <a href="javascript:void(0)" class="btn btn-sm btn-tertiary u-mr5"><i class="ion ion-alert-circled"></i></a>
+                <a href="javascript:void(0)" class="btn btn-sm btn-tertiary u-mr5"><i class="ion ion-edit u-mr5"></i> DÜZENLE</a>
+                <a href="javascript:void(0)" class="btn btn-sm btn-tertiary"><i class="ion ion-trash-b u-mr5"></i> SİL</a>
+              </div>
+              <span class="title">A019 8589910</span>
+            </div>
+
+          </div>
+          
+        </div>
+      </section>
+
+		</main>
+
+		<footer>
+			<div class="row">
+				<div class="col-sm-4">
+				</div>
+				<div class="col-sm-4">
+				</div>
+				<div class="col-sm-4">
+				</div>
+			</div>
+		</footer>
+
+	</body>
+
+</html>
